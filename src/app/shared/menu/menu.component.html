@@ -1,0 +1,15 @@
+
+<div class="p-mb-3">
+    <p-menubar [model]="items">
+    
+        <ng-template pTemplate="start" >
+            <img src="./favicon.ico" alt="">
+        </ng-template>
+        <ng-template pTemplate="end">
+            <input type="text" pInputText placeholder="Search">
+            <button (click)="logout()" pButton type="button" icon="pi pi-sign-out" iconPos="left" class="p-button-danger"></button>
+        </ng-template>
+        
+    </p-menubar>
+</div>
+

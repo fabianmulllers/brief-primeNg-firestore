@@ -1,0 +1,24 @@
+<div class="p-d-flex p-jc-center p-ai-center">
+    <div class="p-col-4">
+        <h2>{{ 'Iniciar sesion' | titlecase }}</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="autenticar()">
+            <p-card>
+                <div class="p-fluid">
+                    <div class="p-field">
+                        <label for="email">Email</label>
+                        <input id="email" formControlName="email" type="text" pInputText> 
+                    </div>
+                    <div class="p-field">
+                        <label for="password">Password</label>
+                        <input id="password" formControlName="password" type="text" pInputText> 
+                    </div>
+
+                    <div class="p-field">
+                        <button pButton type="submit" label="Ingresar" icon="pi pi-sign-in" iconPos="right"></button>
+                    </div>
+
+                </div>
+            </p-card>
+        </form>
+    </div>
+</div>
